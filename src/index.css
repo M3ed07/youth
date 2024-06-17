@@ -10,7 +10,12 @@ body {
         @apply relative lg:pb-2 pb-1;
     }
 }
-.list-item a::after {
+@layer components{
+    .formInput input{
+        @apply w-full h-10 px-2 border border-border1-color rounded-sm shadow-md
+    }
+}
+/* .list-item a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -32,4 +37,4 @@ body {
     transform-origin: bottom left;
     color: #ffffff;
     opacity: 1;
-}
+} */
